@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #ffff;
+}
+
+body{
+    background-color: #a4a3a3;
+}
+
+nav {
+    background-color: #333;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+nav a {
+    padding: 20px;
+    float: left;
+    margin: 20px;
+    border: 2px solid white;
+}
+
+#logo{
+    position:relative;
+    float: left;
+}
+#intro{
+    height: 50px;
+    background-color: crimson;
+    color: #fff;
+    text-align: center;
+    font-size: 50px;
+}
+
+#navlogin{
+    float: right;
+    width: 140px;
+    height: 30px;
+    border-radius: 10px;
+   color: crimson;
+   background-color: white;
+   text-align: center;
+   margin-top: 30px;
+   padding: 1.5px;
+   font-size: 20px;
+}
+
+section {
+    min-height: 80vh;
+}
+
+#results{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 10px;
+}
+.card {
+    width: 180px;
+    height: 500px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 9px 18px rgba(11, 9, 9, 0.9);
+}
+
+.card img {
+    width:fit-content;
+    height: 300px;
+    border-bottom: 1px solid #ddd; 
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card-content p {
+    color: #666;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+h1{
+    border: 2px solid black;
+    margin: 10px;
+    background-color: rgb(249, 252, 72);
+    color: #333;
+    text-align: center;
+    
+}
+.part{
+    display: flex;
+    justify-content: center;
+}
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 20%;
+    height: 700px;
+}
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+    
+    </style>
+    
+</head>
+<body>
+    <div>
+        <nav>
+          <div>
+            <img id="logo" src="https://static.vecteezy.com/system/resources/previews/020/402/234/non_2x/library-book-reading-abstract-icon-or-emblem-vector.jpg" alt="" role="presentation" height="100" width="100">
+            <a href="index.html">Home</a>
+            <a href="#one">Trending Books</a>
+            <a href="#two">Classic Books</a>
+            <a href="#three">Romance</a>
+            <a href="#four">Kids</a>
+            <a href="#five">Thrillers</a>
+            <a href="#six">Textbooks</a>
+          </div>
+          <div id="login">
+            <a href="" id="navlogin">Login/Register</a>
+          </div>
+        </nav>
+      </div>
+      <div id="intro">
+        <p>
+            <marquee direction="left" behaviour="slide">
+                <strong>Welcome To Library</strong>
+            </marquee>
+        </p>
+    </div>
+    <section>
+        <div id="slider">
+            <figure>
+                <a href="#one"><img src="1.jpg"></a>
+                <a href="#two"><img src="2.jpg"></a>
+                <a href="#three"><img src="3.jpg"></a>
+                <a href="#four"><img src="4.jpg"></a>
+                <a href="#one"><img src="1.jpg"></a>
+            </figure>
+        </div>
+    </section>
+    <section>
+        <h1 id="one">Trending Books</h1>
+        <div class="part">
+            <div id="results" >
+                <a href="https://openlibrary.org/works/OL257943W/A_Game_of_Thrones">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14817996-M.jpg" alt="">
+                        <div class="card-content">
+                            <h2>A Game of Petals</h2>
+                            <p>Here is the first volume in George R. R. Martin’s magnificent cycle of novels that includes A Clash of Kings and A Storm of Swords. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R. R. Martin’s stunning series is destined to stand as one of the great achievements of imaginative fiction.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL16336633W/Fifty_Shades_of_Grey">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14818882-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>50 śeḍsa ôpha gre</h2>
+                            <p>Novel based on men-women relationship.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL38382569W/I_Don%27t_Love_You_Anymore">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14638562-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>I Don't Love You Anymore</h2>
+                            <p>I hope this book feels like a warm hug to you. I wrote this book for the ones who feel everything too deeply. You're right, I wrote this book for you. This book was meant to find you if you've ever loved someone who didn't love you back, if you've ever over-invested in the wrong people or if you have a hard time letting go. I Don't Love You Anymore is a book that'll feel like home to you. I promise it'll hold you gently on your worst days.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL1063267W/How_to_Win_Friends_and_Influence_People">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14548386-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>人性的弱點</h2>
+                            <p>Available for the first time ever in trade paperback, Dale Carnegie's enduring classic, the inspirational personal development guide that shows how to achieve lifelong success. One of the top-selling books of all time, "How to Win Friends & Influence People" has sold more than 15 million copies in all its editions.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL263458W/Men_are_From_Mars_Women_are_From_Venus">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/22889-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Men are from Mars, women are from Venus book of days</h2>
+                            <p>Once upon a time Martians and Venusians met, fell in love, and had happy relationships together because they respected and accepted their differences. Then they came to Earth and amnesia set in: they forgot they were from different planets.Based on years of successful counseling of couples and individuals, Men Are from Mars, Women Are from Venus has helped millions of couples transform their relationships. Now viewed as a modern classic, this phenomenal book has helped men and women realize how different they really are and how to communicate their needs in such a way that conflict doesn't arise and intimacy is given every chance to grow.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1 id="two">Classic Books</h1>
+        <div class="part">
+            <div id="results">
+                <a href="https://openlibrary.org/works/OL55403W/%D0%A7%D0%B0%D0%B9%D0%BA%D0%B0">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/12768972-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The Sea gull (Chaika)</h2>
+                            <p>The scene is laid in the park on SORIN'S estate. A broad avenue of trees leads away from the audience toward a lake which lies lost in the depths of the park. The avenue is obstructed by a rough stage, temporarily erected for the performance of amateur theatricals, and which screens the lake from view. There is a dense growth of bushes to the left and right of the stage. A few chairs and a little table are placed in front of the stage.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL1066513W/The_devil%27s_disciple">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/6489824-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The devil's disciple</h2>
+                            <p>A young man takes sides with the Devil against straight laced Puritan respectability in the threatening days of the Revolutionary War.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL163739W/The_purple_plain">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/11700560-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The purple plain</h2>
+                            <p>This edition doesn't have a description yet. </p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL893601W/Bouvard_et_P%C3%A9cuchet">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/801726-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Bouvard and Pécuchet</h2>
+                            <p>Comme il faisait une chaleur de 33 degres, le boulevard Bourdon se trouvait absolument desert. Plus bas le canal Saint-Martin, ferme par les deux ecluses etalait en ligne droite son eau couleur d'encre. Il y avait au milieu, un bateau plein de bois, et sur la berge deux rangs de barriques. Au dela du canal, entre les maisons que separent des chantiers le grand ciel pur se decoupait en plaques d'outremer, et sous la reverberation du soleil, les facades blanches, les toits d'ardoises, les quais de granit eblouissaient. Une rumeur confuse montait du loin dans l'atmosphere tiede ; et tout semblait engourdi par le desoeuvrement du dimanche et la tristesse des jours d'ete. Deux hommes parurent. L'un venait de la Bastille, l'autre du Jardin des Plantes. Le plus grand, vetu de toile, marchait le chapeau en arriere, le gilet deboutonne et sa cravate a la main. Le plus petit, dont le corps disparaissait dans une redingote marron, baissait la tete sous une casquette a visiere pointue.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/works/OL23813077W/Commedie">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/10971297-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Commedie</h2>
+                            <p>This edition doesn't have a description yet</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1 id="three">Romance Books</h1>
+        <div class="part">
+            <div id="results">
+                <a href="https://openlibrary.org/books/OL10738599M/A_Lifetime_and_Beyond">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/9999454-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>A Lifetime and Beyond</h2>
+                            <p>The telegram Ryan Devlin received was brief, but it was enough to persuade Kelly to go with him to Australia--to meet the father she'd never known.
+
+                                It was not an easy decision. Particularly as it meant being thrown constantly in the company of Ryan, her fathers emissary and devoted adopted son. Ryan made it clear he considered Kelly a spoiled, worthless brat.
+                                
+                                He also made it clear that he believed her to be as promiscuous as her deceased film-star mother ....</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL25352206M/The_werewolf_upstairs">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/8056796-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The werewolf upstairs</h2>
+                            <p>"Alpha werewolf Konrad Wolfensen sees it as his duty to protect the citizens of Boston, even if it means breaking into their businesses just to prove their security systems don't work. But when his unsolicited services land him in trouble with the law, he'll have to turn to his sexy new neighbor for help. Attorney Roz Wells is bored. She used to have such a knack for attracting the weird and unexpected, but ever since she took a job as a Boston public defender, the quirky quotient in her life has taken a serious hit. Until her sexy werewolf neighbor starts coming around ..."--P. [4] of cover.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL10691218M/Summer_of_the_Weeping_Rain_%28Harlequin_Romance_2412%29">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/9851741-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Summer of the Weeping Rain (Harlequin Romance, #2412)</h2>
+                            <p>FEAR KEPT HER FROM STARTING A NEW LIFE.
+
+                                At home, Lisa would never forget the tragic consequences of her accident -- a scar and the loss of her fiance. A job on a distant Karoo farm offered a solution.
+                                
+                                Unfortunately, the job meant working for the devastating Adam Vandeleur. He was an impossible man to please.
+                                
+                                So when Lisa heard his mother say, "You need a wife, Adam, someone like Lisa," she didn't know whether to laugh -- or to run!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL29319031M/His_Not-So-Blushing_Bride">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/13083318-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>His Not-So-Blushing Bride</h2>
+                            <p>This edition doesn't have a description yet.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL3472057M/California_Christmas">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/2408854-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>California Christmas</h2>
+                            <p>This edition doesn't have a description yet. </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1 id="four">Kids Books</h1>
+        <div class="part">
+            <div id="results">
+                <a href="https://openlibrary.org/books/OL7523118M/Arthur%27s_eyes">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/10965392-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Arthur's eyes</h2>
+                            <p>None of Arthur's friends wear glasses and his classmates tease him! But when he stops wearing them, he gets in all kinds of trouble. Maybe four eyes really are better than two.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL26337388M/The_robot%27s_revenge">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/9312913-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The robot's revenge</h2>
+                            <p>"The Hardy's invention, Roger the Lobber, an automatic tennis ball retrieval and return unit, has been stolen from the Teen Inventor's Club competition and then reappears without warning, transformed into a device of danger.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL26384184M/The_circle_opens_cold_fire_v._3">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/8077128-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The circle opens : cold fire : v. 3</h2>
+                            <p>This edition doesn't have a description yet.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL25261903M/Night_World_No._1">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/7089594-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Night World No. 1</h2>
+                            <p>This edition doesn't have a description yet.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL28272506M/Troubletwisters">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/10200020-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Troubletwisters</h2>
+                            <p>When their home suddenly explodes, twins Jack and Jaide are sent to live in a place they have never heard of, to stay with a grandmother they have never met. Portland might seem like a quiet coastal town, but it soon becomes apparent that the strange things going on there are anything but ordinary. </p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1 id="five">Thrillers Books</h1>
+        <div class="part">
+            <div id="results">
+                <a href="https://openlibrary.org/books/OL24382144M/Treasure">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/6633571-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Treasure</h2>
+                            <p>A violent rise of fundamentalism in Mexico and Egypt has the United States captive inside its own borders, but when the Egyptian Secretary General of the United Nations survives a murderous plane crash in Greenland, Dirk Pitt is pulled into the storm.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL7569427M/The_Bachman_Books">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14651714-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The Bachman Books</h2>
+                            <p>For years, readers wrote asking if Richard Bachman was really world-bestselling Stephen King writing under another name. Now the secret is out--and so, brought together for the first time in one volume, are these four spellbinding stories of future-shock and suspense.
+
+                                RAGE
+                                A high school teenager becomes a gang of one in a terrifying display of rebellion
+                                
+                                THE LONG WALK
+                                A chilling look at the ultra-conservative America of the guture where a gruelling 450-mile marathon is the ultimate sports competition
+                                
+                                ROADWORK
+                                An immovable man refuses to surrender to the irresistible force of progress
+                                
+                                THE RUNNING MAN
+                                TV's future-favourite game show, where contestants are hunted to death in the attempt to win a $ billion jackpot
+                                (back cover)</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL7824144M/Pacific_Vortex%21">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/368945-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Pacific Vortex!</h2>
+                            <p>Fully armed and with all hands on board, the nuclear submarine Starbuck sailed into the calm Pacific Ocean for sea trials - and vanished. No wreckage, no signals, no survivors: nothing ... until ace maritime troubleshooter, Dirk Pitt, finds a single, chilling clue in the shark-torn surf off Hawaii - the log of the Starbuck.'Do not search for us, it can only end in vain ...' A crazed journal of madness and death is all that remains. And the Captain's final, scrawled, fear-crazed note locates the Starbuck's grave hundreds of miles from her last known position! The search for the Starbuck plunges Dirk Pitt into his most shattering assignment to date - a whirlpool of deep-sea mystery and terror - the Pacific Vortex!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL7660657M/Cyclops">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/8231759-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Cyclops</h2>
+                            <p>Cyclops is an action-adventure novel by Clive Cussler. This is the 8th book featuring the author’s primary protagonist, Dirk Pitt. A wealthy American financier disappears on a treasure hunt in an antique blimp. From Cuban waters, the blimp drifts toward Florida with a crew of dead men—Soviet cosmonauts. Dirk Pitt discovers a shocking scheme: a covert group of U.S. industrialists has put a colony on the moon, a secret base they will defend at any cost. Threatened in space, the Russians are about to strike a savage blow in Cuba—and only Dirk Pitt can stop them. From a Cuban torture chamber to the cold ocean depths, Pitt is racing to defuse an international conspiracy that threatens to shatter the Earth!</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL3696428M/Wolves_of_the_Calla">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14651009-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Wolves of the Calla</h2>
+                            <p>From the Flap:
+
+                                Roland Deschain and his ka-tet are bearing southeast through the forests of Mid-World, the almost timeless landscape that seems to stretch from the wreckage of civility that defined Roland's youth to the crimson chaos that seems the future's only promise. Readers of Stephen King's epic series know Roland well, or as well as this enigmatic hero can be known. They also know the companions who have been drawn to his quest for the DarkTower: Eddie Dean and his wife, Susannah; Jake Chambers, the boy who has come twice through the doorway of death into Roland's world; and Oy, the Billy-Bumbler.
+                                
+                                In this long-awaited fifth novel in the saga, their path takes them to the outskirts of Calla Bryn Sturgis, a tranquil valley community of farmers and ranchers on Mid-World's borderlands. Beyond the town, the rocky ground rises toward the hulking darkness of Thunderclap, the source of a terrible affliction that is slowly stealing the community's soul. One of the town's residents is Pere Callahan, a ruined priest who, like Susannah, Eddie, and Jake, passed through one of the portals that lead both into and out of Roland's world.
+                                
+                                As Father Callahan tells the ka-tet the astonishing story of what happened following his shamed departure from Maine in 1977, his connection to the Dark Tower becomes clear, as does the danger facing a single red rose in a vacant lot off Second Avenue in midtown Manhattan. For Calla Bryn Sturgis, danger gathers in the east like a storm cloud. The Wolves of Thunderclap and their unspeakable depredation are coming. To resist them is to risk all, but these are odds the gunslingers are used to, and they can give the Calla-folken both courage and cunning. Their guns, however, will not be enough.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1 id="six">Textbooks</h1>
+        <div class="part">
+            <div id="results">
+                <a href="https://openlibrary.org/books/OL24739659M/Algebra_1_2">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/6793359-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Algebra 1/2</h2>
+                            <p>Pre-Algebra Math text geared towards US grade 8
+                                Both Algebra ½ and Saxon 8/7 are pre-algebra courses.
+                                Algebra 1/2 Covers area, percent, ratio, order of operations, beginning algebra concepts.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL23711974M/Adventures_of_Huckleberry_Finn">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14323274-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Adventures of Huckleberry Finn</h2>
+                            <p>Mark Twain’s Adventures of Huckleberry Finn is, according to many critics and fond readers, the great American novel. Full of vibrant American characters, intriguing regional dialects and folkways, and down-home good humor, it also hits Americans in one of their greatest and on-going sore spots: the fraught issue of racism. As Huck and Jim float down the Mississippi and encounter all manner of people and situations, and as Huck struggles mightily with his conscience concerning Jim, the novel strongly invites a moral and religious perspective. In this new edition, Mary R. Reichardt’s introduction places the book in its historical and biographical context, and several critical articles examine such issues as the book’s moral implications, religious contexts, and status as an American epic.
+
+                                --back cover</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL10755107M/Classic_Short_Stories">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/368945-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Classic Short Stories</h2>
+                            <p>Theme.
+                                Death of the Dauphin / Alphonse Daudet
+                                Lady or the tiger? / Frank Stockton
+                                Artist of the beautiful / Nathaniel Hawthorne --
+                                Setting.
+                                White heron / Sarah Orne Jewett
+                                Pit and the Pendulum / Edgar Allan Poe
+                                Outcasts of Poker Flat / Bret Harte --
+                                Plot.
+                                Piece of string / Guy de Maupassant
+                                To please his wife / Thomas Hardy
+                                Cop and the anthem / O. Henry --
+                                Point of view.
+                                £1,000,000 bank note / Mark Twain
+                                Horseman in the sky / Ambrose Bierce
+                                Paul's case / Willa Cather --
+                                Character.
+                                God sees the truth, but waits / Leo Tolstoy
+                                Man without a country / Edward Everett Hale
+                                Louisa / Mary Wilkins Freeman --
+                                Tone.
+                                Fatal cradle / Wilkie Collins
+                                Story of an hour / Kate Chopin
+                                Work of art / Anton Chekhov</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL24744924M/Basic_algebra">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/6798600-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>Basic algebra</h2>
+                            <p>This edition doesn't have a description yet.</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://openlibrary.org/books/OL49350336M/The_United_States_in_Literature">
+                    <div class="card">
+                        <img src="https://covers.openlibrary.org/b/id/14414917-L.jpg" alt="">
+                        <div class="card-content">
+                            <h2>The United States in Literature</h2>
+                            <p>This edition doesn't have a description yet.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+      </section>
+</body>
+</html>
